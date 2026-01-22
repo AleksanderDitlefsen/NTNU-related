@@ -9,6 +9,6 @@ def TerningKast(n):
         b = random.randint(1, 6)
         a_sum += a
         b_sum += b
-    print(f'Average sum when throwing two die {n} times: {(a_sum + b_sum) / n}')
+    print(f'Average sum when throwing two dice {n} times: {(a_sum + b_sum) / n}')
 
 TerningKast(1000000)
