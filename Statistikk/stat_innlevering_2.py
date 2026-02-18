@@ -32,7 +32,6 @@ def simX(n):
             x_sim[i] = x[5]
     return x_sim
 
-
 """
 n = 1000000
 x_simulert = simX(n)
@@ -44,7 +43,6 @@ for i in range(len(x_simulert)):
 
 print(" Sannsynligheten for at X er mindre enn eller lik 2 er ", a/n)
 """
-
 """
 n = 200_000
 x_simulert = simX(n)
@@ -58,7 +56,7 @@ print(f'Standartdavviket SD(x) er med {n} simuleringer tilnermet til: ', np.sqrt
 
 print(np.std(x_simulert, ddof=1))
 """
-"""
+
 def simX2(n, alpha):
     results = []
     for i in range(n):
@@ -74,7 +72,7 @@ x_verdier = np.linspace(0, 4, 500)
 plt.hist(simX2(100000, 1), bins=100, density=True, alpha=0.6, color='g')
 plt.plot(x_verdier, f(x_verdier, 1), color='r')
 plt.show()
-"""
+
 
 
 def simY(n):
